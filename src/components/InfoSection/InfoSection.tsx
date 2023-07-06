@@ -10,17 +10,15 @@ function InfoSection() {
         <div className="w-full sm:w-2/5 flex flex-col gap-4">
           <h2 className="text-3xl">Hi! I'm a Microfrontend.</h2>
           <p>You probably didn't notice me loading.</p>
-          <p>
-            <div className="flex">
-              <a
-                className="text-sm flex gap-1 hover:underline bg-pastelSecondary px-3 py-2 w-auto rounded-lg"
-                href="https://microfrontend-demo.vercel.app/"
-              >
-                Standalone Microfrontend{' '}
-                <ExternalLinkSVG style={{ width: 16 }} />
-              </a>
-            </div>
-          </p>
+
+          <div className="flex">
+            <a
+              className="text-sm flex gap-1 hover:underline bg-pastelSecondary px-3 py-2 w-auto rounded-lg"
+              href="https://microfrontend-demo.vercel.app/"
+            >
+              Standalone Microfrontend <ExternalLinkSVG style={{ width: 16 }} />
+            </a>
+          </div>
         </div>
         <div className="w-full sm:w-3/5">
           <table className="w-full">

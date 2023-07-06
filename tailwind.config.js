@@ -7,7 +7,7 @@ module.exports = {
         'brand-green': '#0B362D',
         pastel: '#f6f7ef',
         text: '#1c3a13',
-        pastelSecondary: '#EAF0CE',
+        pastelSecondary: '#C2D0BF',
       },
     },
   },
