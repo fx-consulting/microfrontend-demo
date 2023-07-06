@@ -2,7 +2,7 @@ import path from 'path';
 import 'webpack-dev-server';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
-import { Configuration } from 'webpack';
+import { Configuration, ProvidePlugin } from 'webpack';
 import { ReactMicrofrontendsPlugin } from '@fx-consulting/microfrontends';
 
 const isProduction =
@@ -53,6 +53,9 @@ const webpackConfig: Configuration = {
     ],
   },
   plugins: [
+    new ProvidePlugin({
+      process: 'process/browser',
+    }),
     new ReactMicrofrontendsPlugin({
       shared: {
         react: {
