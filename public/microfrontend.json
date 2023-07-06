@@ -1,0 +1,8 @@
+{
+  "name": "demo",
+  "remotes": [],
+  "exports": {
+    "App": "./src/App"
+  },
+  "shared": ["react", "react-dom", "react-router-dom"]
+}
