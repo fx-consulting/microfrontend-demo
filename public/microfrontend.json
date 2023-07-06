@@ -1,6 +1,11 @@
 {
   "name": "demo",
-  "remotes": [],
+  "remotes": [
+    {
+      "name": "homepage",
+      "url": "http://localhost:3001/_next/static/chunks"
+    }
+  ],
   "exports": {
     "App": "./src/App"
   },

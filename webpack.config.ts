@@ -65,6 +65,11 @@ const webpackConfig: Configuration = {
           singleton: true,
           version: '0',
         },
+        'next/link': {
+          requiredVersion: false,
+          singleton: true,
+          version: '0',
+        },
       },
     }),
     new HtmlWebpackPlugin({

@@ -1,7 +1,7 @@
 import React from 'react';
 import SchemeSVG from '../../assets/images/mf-scheme.svg';
 import ExternalLinkSVG from '../../assets/icons/external-link.svg';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 function InfoSection() {
   return (
@@ -149,7 +149,7 @@ function Page() {
             </p>
             <p>
               <Link
-                to="/book"
+                href="/book"
                 className="text-center inline-block p-4 border-2 border-brand-green w-full max-w-xs hover:bg-brand-green hover:text-white transition text-sm font-medium"
               >
                 Book a demo now
