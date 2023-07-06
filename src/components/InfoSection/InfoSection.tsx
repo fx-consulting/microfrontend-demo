@@ -1,23 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import SchemeSVG from '../../assets/images/mfs_scheme.svg';
-import hljs from 'highlight.js';
-import javascript from 'highlight.js/lib/languages/javascript';
-import 'highlight.js/styles/tomorrow-night-bright.css';
+import ExternalLinkSVG from '../../assets/icons/external-link.svg';
 import { Link } from 'react-router-dom';
 
-hljs.registerLanguage('javascript', javascript);
-
 function InfoSection() {
-  useEffect(() => {
-    hljs.initHighlighting();
-  }, []);
-
   return (
     <div className="bg-pastel py-12 sm:py-24 px-12 text-text">
       <div className="container mx-auto flex flex-col sm:flex-row gap-12">
         <div className="w-full sm:w-2/5 flex flex-col gap-4">
           <h2 className="text-3xl">Hi! I'm a Microfrontend.</h2>
-          You probably didn't notice me loading.
+          <p>You probably didn't notice me loading.</p>
+          <p>
+            <div className="flex">
+              <a
+                className="text-sm flex gap-1 hover:underline bg-pastelSecondary px-3 py-2 w-auto rounded-lg"
+                href="https://microfrontend-demo.vercel.app/"
+              >
+                Standalone Microfrontend{' '}
+                <ExternalLinkSVG style={{ width: 16 }} />
+              </a>
+            </div>
+          </p>
         </div>
         <div className="w-full sm:w-3/5">
           <table className="w-full">
