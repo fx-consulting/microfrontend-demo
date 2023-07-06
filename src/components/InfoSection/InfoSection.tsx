@@ -1,5 +1,5 @@
 import React from 'react';
-import SchemeSVG from '../../assets/images/mfs_scheme.svg';
+import SchemeSVG from '../../assets/images/mf-scheme.svg';
 import ExternalLinkSVG from '../../assets/icons/external-link.svg';
 import { Link } from 'react-router-dom';
 

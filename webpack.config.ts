@@ -26,9 +26,6 @@ const webpackConfig: Configuration = {
     publicPath: 'auto',
     chunkFilename: '[id].[contenthash].js',
   },
-  optimization: {
-    // runtimeChunk: 'single',
-  },
   module: {
     rules: [
       {
