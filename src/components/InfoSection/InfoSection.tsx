@@ -88,8 +88,8 @@ function InfoSection() {
           in multiple applications within your company. One team is working on
           it but multiple teams can use it.
         </p>
-        <div className="flex justify-center my-24">
-          <SchemeSVG />
+        <div className="flex justify-center my-4 sm:my-12">
+          <SchemeSVG className="max-w-2xl" />
         </div>
       </div>
       <div className="container mx-auto w-full border my-12" />
