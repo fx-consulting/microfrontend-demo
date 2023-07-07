@@ -2,6 +2,7 @@ const { DesignSystemPlugin } = require('@fx-consulting/design-system');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  important: '.demo',
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
     './node_modules/@fx-consulting/design-system/dist/**/*.js',
