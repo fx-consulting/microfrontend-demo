@@ -2,6 +2,11 @@ import React from 'react';
 import SchemeSVG from '../../assets/images/mf-scheme.svg';
 import ExternalLinkSVG from '../../assets/icons/external-link.svg';
 import Link from 'next/link';
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from '@fx-consulting/design-system';
 
 function InfoSection() {
   return (
@@ -13,7 +18,7 @@ function InfoSection() {
 
           <div className="flex">
             <a
-              className="text-sm flex gap-1 hover:underline bg-pastelSecondary px-3 py-2 w-auto rounded-lg"
+              className="text-sm flex gap-1 hover:underline bg-pastel-secondary px-3 py-2 w-auto rounded-lg"
               href="https://microfrontend-demo.vercel.app/"
               target="_blank"
             >
@@ -67,9 +72,23 @@ function InfoSection() {
               </tr>
             </tbody>
           </table>
-          <div className="p-4 bg-pastelSecondary mt-12 text-sm">
-            This example Microfrontend is built with React, TailwindCSS and
-            TypeScript and is loaded within Next.js.
+          <div className="mt-12">
+            <Alert className="bg-pastel-secondary text-text border-pastel-secondary">
+              <AlertTitle>Example</AlertTitle>
+              <AlertDescription>
+                This example Microfrontend is built with React, TailwindCSS and
+                TypeScript and is loaded within Next.js. It's using our{' '}
+                <div className="inline-block">
+                  <a
+                    className="flex text-sm gap-1 hover:underline bg-pastel-secondary w-auto rounded-lg"
+                    href="https://microfrontend-demo.vercel.app/"
+                    target="_blank"
+                  >
+                    Design System →
+                  </a>
+                </div>
+              </AlertDescription>
+            </Alert>
           </div>
         </div>
       </div>
