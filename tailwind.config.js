@@ -1,4 +1,4 @@
-const { DesignSystemPlugin } = require('@fx-consulting/design-system');
+const { DesignSystemPlugin } = require('@fx-consulting/design-system-demo');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

@@ -2,11 +2,6 @@ import React from 'react';
 import SchemeSVG from '../../assets/images/mf-scheme.svg';
 import ExternalLinkSVG from '../../assets/icons/external-link.svg';
 import Link from 'next/link';
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from '@fx-consulting/design-system';
 
 function InfoSection() {
   return (
@@ -73,7 +68,7 @@ function InfoSection() {
             </tbody>
           </table>
           <div className="mt-12">
-            <Alert className="bg-pastel-secondary text-text border-pastel-secondary">
+            {/* <Alert className="bg-pastel-secondary text-text border-pastel-secondary">
               <AlertTitle>Example</AlertTitle>
               <AlertDescription>
                 This example Microfrontend is built with React, TailwindCSS and
@@ -88,7 +83,7 @@ function InfoSection() {
                   </a>
                 </div>
               </AlertDescription>
-            </Alert>
+            </Alert> */}
           </div>
         </div>
       </div>
