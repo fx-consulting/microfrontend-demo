@@ -13,11 +13,11 @@ function InfoSection() {
 
           <div className="flex">
             <a
-              className="text-sm flex gap-1 hover:underline bg-pastel-secondary px-3 py-2 w-auto rounded-lg"
+              className="text-sm flex items-center gap-1 hover:underline bg-pastel-secondary px-3 py-2 w-auto rounded-lg"
               href="https://microfrontend-demo.vercel.app/"
               target="_blank"
             >
-              Standalone Microfrontend <Icon.ExternalLink />
+              Standalone Microfrontend <Icon.ExternalLink className="w-4 h-4" />
             </a>
           </div>
         </div>
