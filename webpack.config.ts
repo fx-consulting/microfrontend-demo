@@ -3,6 +3,7 @@ import 'webpack-dev-server';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import { Configuration, ProvidePlugin } from 'webpack';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { ReactMicrofrontendsPlugin } from '@fx-consulting/microfrontends';
 
 const isProduction =
@@ -25,6 +26,9 @@ const webpackConfig: Configuration = {
   output: {
     publicPath: 'auto',
     chunkFilename: '[id].[contenthash].js',
+  },
+  optimization: {
+    usedExports: true,
   },
   module: {
     rules: [
@@ -90,6 +94,7 @@ const webpackConfig: Configuration = {
         },
       ],
     }),
+    new BundleAnalyzerPlugin(),
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],

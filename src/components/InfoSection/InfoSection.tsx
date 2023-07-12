@@ -1,7 +1,7 @@
 import React from 'react';
 import SchemeSVG from '../../assets/images/mf-scheme.svg';
-import ExternalLinkSVG from '../../assets/icons/external-link.svg';
 import Link from 'next/link';
+import { Icon } from '@fx-consulting/design-system-demo';
 
 function InfoSection() {
   return (
@@ -17,7 +17,7 @@ function InfoSection() {
               href="https://microfrontend-demo.vercel.app/"
               target="_blank"
             >
-              Standalone Microfrontend <ExternalLinkSVG style={{ width: 16 }} />
+              Standalone Microfrontend <Icon.ExternalLink />
             </a>
           </div>
         </div>
