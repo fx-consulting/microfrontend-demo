@@ -94,7 +94,7 @@ const webpackConfig: Configuration = {
         },
       ],
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
