@@ -6,7 +6,7 @@ import { Icon } from '@fx-consulting/design-system-demo';
 function InfoSection() {
   return (
     <div className="bg-pastel py-12 sm:py-24 text-text">
-      <div className="px-12 sm:px-24">
+      <div className="container mx-auto px-12 sm:px-24">
         <div className="container mx-auto flex flex-col sm:flex-row gap-12">
           <div className="w-full sm:w-2/5 flex flex-col gap-4">
             <h2 className="text-3xl">Hi! I'm a Microfrontend.</h2>
